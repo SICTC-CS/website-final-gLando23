@@ -1,0 +1,143 @@
+* {
+    --text-size: 30px;
+}
+
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0px;
+    background-image: url("./../public/sky/8k_stars.jpg");
+    background-size: cover;
+}
+
+* {
+scrollbar-width: auto;
+scrollbar-color: #585d60 #000000;
+overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+width: 16px;
+background-color: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #585d60;
+border-radius: 10px;
+border: 3px solid #000000;
+}
+
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
+
+#textbody {
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 100px;
+    color: black;
+}
+
+#textbody ul {
+    padding: 0;
+}
+
+#textbody li {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#small {
+    font-size: 8px;
+}
+
+form {
+    margin: 0 auto;
+    width:250px;
+}
+
+form div {
+    padding-top: 5px;
+    background-color: #ffbb00;
+}
+
+form div:nth-of-type(even) {
+    background-color: #d89f03;
+}
+
+form input {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+canvas {
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+nav {
+    z-index: 1;
+    color: white;
+    position: fixed;
+    left:50%;
+    transform:translate(-50%);
+    font-size: calc(var(--text-size) - 4px);
+    top: 5vh;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    z-index: 1;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%);
+    font-size: var(--text-size);
+    top: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#links { 
+    z-index: 1;
+    color: white;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+
+#links a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: calc(var(--text-size) - 4px);
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    * {
+        --text-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        --text-size: 14px;
+    }
+}
